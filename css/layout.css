@@ -1,0 +1,289 @@
+html {
+    font-size: 16px
+}
+
+/********
+ * body *
+ ********/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Droid Serif', monospace, Arial, cursive;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 3px
+}
+
+.title-about,
+title-skills {
+    text-align: left;
+    font-size: 1.8rem;
+}
+
+.title-about {
+    padding: 1vw
+}
+
+.title-skills {
+    font-size: 1.5rem padding: 1vw
+}
+
+/* additional color for title*/
+
+.title span,
+.title-about span,
+.title-skills span {
+    font-size: 1.8rem;
+    color: blueviolet;
+}
+
+/**********
+ * NavBar *
+ **********/
+
+
+
+.vedio {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgb(113, 113, 255), rgb(138, 255, 146));
+    mix-blend-mode: overlay;
+}
+
+/*home*/
+/*.logo{
+            position: absolute;
+            top: 0%;
+            left: 5%;
+        }*/
+
+.nav {
+    position: absolute;
+    right: 3%;
+    top: 30px;
+}
+
+.li {
+    float: left;
+    transition: 0.5s;
+    list-style: none;
+}
+
+.li:hover {
+    transition: 0.5s;
+    transform: translateY(-10px);
+}
+
+ul a {
+    color: white;
+    text-decoration-line: none;
+    letter-spacing: 3px;
+    margin: 5px 15px;
+}
+
+.a:hover {
+    color: white;
+}
+
+
+
+#maintext {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    color: white;
+    letter-spacing: 4px;
+    animation: fadein 3s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+/***********
+ * Section *
+ ***********/
+
+section {
+    position: relative;
+    width: 100%;
+    overflow: hidden
+}
+
+/********
+ * Home *
+ ********/
+
+#home {
+    height: 100vh;
+    background: url(./images/header_background.mp4) center center no-repeat scroll;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    overflow: hidden
+}
+
+h1 #myH2,
+h1 #myH3 {
+    position: absolute;
+    display: block;
+    width: 100%
+}
+
+/*********
+ * Profile *
+ *********/
+
+.about_container {
+    margin-top: 10vw
+}
+
+/*social icon */
+
+.icon:hover {
+    opacity: 0.8
+}
+
+.social-links a {
+    font-size: 26px;
+    display: inline-block;
+    color: #000;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    margin-top: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+    margin-top: 1vw;
+}
+
+
+.social-links .mail:hover {
+    background: #0077B5;
+    color: #fff;
+    transition: 2s;
+}
+
+.social-links .github:hover {
+    background: #0077B5;
+    color: #fff;
+    transition: 2s;
+
+}
+
+.footer-contact .mail {
+    color: #fff
+}
+
+.footer-contact .mail:hover {
+    color: #18d36e
+}
+
+.about_details p {
+    letter-spacing: 1.2;
+}
+
+/* table */
+
+.table-bordered td,
+.table-bordered th {
+    border-color: black
+}
+
+/****************************************
+ * Education, Skills *
+*****************************************/
+
+.parag p {
+    letter-spacing: 1.2
+}
+
+/* other skills */
+
+ul li {
+    list-style: none
+}
+
+.skills_item {
+    margin: .8vh;
+    padding: .5vw;
+    border-radius: 5px;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    cursor: pointer
+}
+
+.skills_item:hover {
+    transform: scale(1.15);
+}
+
+/* diffent color for Beginner,Intermediate and Expert */
+
+.skills_beginner {
+    border-left: 1vw solid #8eccf0;
+    background-color: #deeefe
+}
+
+.skills_intermediate {
+    border-left: 1vw solid #59de5a;
+    background-color: #dffbea
+}
+
+/* footer at other skills */
+
+.skills_color_beginner::first-letter {
+    border-left: .5vw solid #8eccf0
+}
+
+.skills_color_intermediate::first-letter {
+    border-left: .5vw solid #59de5a
+}
+
+
+/*************
+ * project *
+ *************/
+.img_box{
+    width: 370px;
+    height: 230px;
+}
+
+.img-box > img {
+  width:100%;
+  display:block;
+}
+
+
+.work {
+    margin: 14vh 2vh
+}
+
+img {
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/**********
+ * footer *
+ **********/
+
+footer {
+    margin-top: 10%;
+    bottom: 0;
+}
+
+
+
